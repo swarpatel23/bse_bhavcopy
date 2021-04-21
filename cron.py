@@ -44,7 +44,7 @@ def get_bhavcopy():
     redis_conn = redis.Redis('localhost')
 
     if state == 200:
-        csv_file = csv_save_path + "/EQ" + present_day + ".CSV"    # ???
+        csv_file = csv_save_path + "/EQ" + present_day + ".CSV"
         parse_and_save(csv_file, redis_conn)
 
 

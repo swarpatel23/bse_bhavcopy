@@ -33,7 +33,7 @@ export default {
       const data = XLSX.utils.json_to_sheet(stock_list);
       const wb = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(wb, data, "data");
-      XLSX.writeFile(wb, "demo.xlsx");
+      XLSX.writeFile(wb, "bhavcopy.xlsx");
     },
   },
 };
